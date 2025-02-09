@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Search Interface</title>
+    <link rel="stylesheet" href="apply.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="menu-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+      <div class="menu-links">
+        <b>
+          <a href="#">About Us</a>
+          <a href="#">Courses</a>
+          <a href="#">Find Jobs</a>
+          <a href="#">Sign In</a>
+          <a href="#">Sign Up</a></b
+        >
+      </div>
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Job Title, location, skill category..."
+        />
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="form">
+      <h1>Apply For Job</h1>
+      <form>
+        <label for="name">Full name *</label> <br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="form-input"
+          placeholder="Full name"
+          required
+        />
+        <br />
+
+        <label for="email">Email *</label><br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-input"
+          placeholder="Email"
+          required
+        />
+        <br />
+
+        <label for="phone">Phone number *</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="Phone number"
+          required
+        />
+        <br />
+        <label for="address">Address *</label><br />
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          class="form-input"
+          placeholder="Phone number"
+          required
+        />
+        <br />
+
+        <div class="submit-container">
+          <button type="submit" id="send">
+            <b> <p class="send-txt">Send application</p></b>
+          </button>
+          <p class="disclaimer">
+            By clicking <b>Send application </b>, you agree to our
+            <a href="#" style="color: #8b54ff"> <b> User Agreement</b></a
+            >, <a href="#" style="color: #8b54ff"> <b>Privacy Policy </b></a>,
+            and <a href="#" style="color: #8b54ff"><b> Cookie Policy</b></a
+            >.
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <img src="images/Screenshot 2025-02-08 130312.png" class="image" alt="" />
+  </body>
+</html>
