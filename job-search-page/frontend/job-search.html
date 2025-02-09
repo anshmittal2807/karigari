@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Interface</title>
+    <link rel="stylesheet" href="job-search.css">
+
+    <style>
+        body {
+            margin: 0; 
+            font-family: sans-serif; 
+        }
+        .top-bar {
+            background-color: black;
+            color: white;
+            padding: 10px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 20px;
+        }
+        .menu-button {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            gap: 5px; 
+            padding: 5px; 
+        }
+        .menu-line {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+        }
+        .menu-links {
+            display: flex;
+            gap: 20px; 
+        }
+        .menu-links a {
+            color: white;
+            text-decoration: none; 
+            padding: 5px 10px; 
+            border-radius: 5px; 
+        }
+        .menu-links a:hover{
+            background-color: grey;
+        }
+        .search-box {
+            display: flex;
+        }
+        .search-box input[type="text"] {
+            padding: 5px;
+            border: none;
+            outline: none;
+            background: transparent;
+            color: white;
+            border-bottom: 2px solid white;
+        }
+        .search-box button {
+            background-color: #4caf89; 
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="top-bar">
+        <div class="menu-button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+        <div class="menu-links"><b>
+            <a href="#">About Us</a>
+            <a href="#">Courses</a>
+            <a href="#">Find Jobs</a>
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a></b>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Job Title, location, skill category...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Salary Range</h3>
+                <div class="salary-inputs">
+                    <input type="text" placeholder="Min">
+                    <input type="text" placeholder="Max">
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Job Type</h3>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox" checked> All <span class="count">(2567)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Full-Time <span class="count">(450)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Part-Time <span class="count">(145)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Internship <span class="count">(65)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Contract <span class="count">(12)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>Experience Level</h3>
+                <div class="checkbox-group">
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Fresher/Entry-Level <span class="count">(265)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Junior <span class="count">(21)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Mid-Level <span class="count">(212)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Senior <span class="count">(12)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Lead/Managerial <span class="count">(24)</span>
+                    </label>
+                    <label class="checkbox-item">
+                        <input type="checkbox"> Director/Executive <span class="count">(10)</span>
+                    </label>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <!-- Job Card 1 -->
+            <div class="job-card">
+                <div class="bookmark">☆</div>
+                <div class="job-type part-time">PART-TIME</div>
+                <h2 class="job-title">Electrician</h2>
+                <div class="salary">₹18,000 - ₹25,000</div>
+                <div class="company-info">
+                    <img src="images/download (2).png" alt="Bright Spark Solutions" class="company-logo">
+                    <div class="company-details">
+                        <div class="company-name">Bright Spark Solutions</div>
+                        <div class="location">📍 New Delhi, India</div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <a href="#" class="btn btn-outline">View details</a>
+                    <a href="#" class="btn btn-primary">Apply now</a>
+                </div>
+            </div>
+                 <!-- Job Card 3 -->
+                 <div class="job-card">
+                    <div class="bookmark">☆</div>
+                    <div class="job-type part-time">PART-TIME</div>
+                    <h2 class="job-title">Electrician</h2>
+                    <div class="salary">₹18,000 - ₹25,000</div>
+                    <div class="company-info">
+                        <img src="images/download (2).png" alt="Bright Spark Solutions" class="company-logo">
+                        <div class="company-details">
+                            <div class="company-name">Bright Spark Solutions</div>
+                            <div class="location">📍 New Delhi, India</div>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <a href="#" class="btn btn-outline">View details</a>
+                        <a href="#" class="btn btn-primary">Apply now</a>
+                    </div>
+                </div>
+
+                     <!-- Job Card 1 -->
+            <div class="job-card">
+                <div class="bookmark">☆</div>
+                <div class="job-type part-time">PART-TIME</div>
+                <h2 class="job-title">Electrician</h2>
+                <div class="salary">₹18,000 - ₹25,000</div>
+                <div class="company-info">
+                    <img src="images/download (2).png" alt="Bright Spark Solutions" class="company-logo">
+                    <div class="company-details">
+                        <div class="company-name">Bright Spark Solutions</div>
+                        <div class="location">📍 New Delhi, India</div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <a href="#" class="btn btn-outline">View details</a>
+                    <a href="#" class="btn btn-primary">Apply now</a>
+                </div>
+            </div>
+
+    
+
+            <!-- Job Card 2 -->
+            <div class="job-card">
+                <div class="bookmark">☆</div>
+                <div class="job-type full-time">FULL-TIME</div>
+                <h2 class="job-title">Senior UI/UX Designer</h2>
+                <div class="salary">$30,000 - $55,000</div>
+                <div class="company-info">
+                    <img src="images/download (2).png" alt="Apple" class="company-logo">
+                    <div class="company-details">
+                        <div class="company-name">Apple</div>
+                        <div class="location">📍 Boston, USA</div>
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <a href="#" class="btn btn-outline">View details</a>
+                    <a href="apply-job.html" class="btn btn-primary">Apply now</a>
+                </div>
+            </div>
+
+
+        
+        </main>
+    </div>
+</body>
+</html>
