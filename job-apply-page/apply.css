@@ -1,0 +1,125 @@
+body {
+    margin: 0; 
+    font-family: sans-serif; 
+    background-color: #f5f4f0;
+}
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+}
+.menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    padding: 5px; 
+}
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.menu-links {
+    display: flex;
+    gap: 20px; 
+}
+.menu-links a {
+    color: white;
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+.menu-links a:hover{
+    background-color: grey;
+}
+.search-box {
+    display: flex;
+}
+.search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.search-box button {
+    background-color: #4caf89; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form {
+    padding: 30px;
+     margin-left: 49%;
+    width: 40%;
+    background-color: white;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.form-input {
+    width: 75%;
+    border-radius: 20px;
+    height: 35px;
+    text-align: center;
+    gap: 100px;
+    margin-left: 10%;
+    margin-bottom:20px;
+    border: 2px solid #8B54FF;
+    color: black;
+}
+h1 {
+    text-align: center;
+    color:#1A906B;
+    font-size: 3rem;
+}
+label {
+    margin-left: 10%;
+    margin-top:20px;
+    color: #565656;
+    font-weight: 700;
+
+}
+
+.image {
+position: absolute;
+top: 355px;
+background-color: transparent;
+    height: 370px;
+    width: 400px;
+}
+
+.submit-container {
+    display: flex;
+}
+#send {
+   border-radius: 30px;
+    height: 5cap;
+    width: 170px;
+    border: none;
+    background-color:#8B54FF;
+    color: white;
+    margin-right: 15px;
+
+    
+}
+
+.disclaimer {
+    margin-top: 5px;
+    color:#8B54FF
+}
