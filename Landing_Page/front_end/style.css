@@ -3,3 +3,89 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    margin: 0; 
+    font-family: sans-serif; 
+}
+.top-bar {
+    background-color: black;
+    color: white;
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+}
+.menu-button {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px; 
+    padding: 5px; 
+}
+.menu-line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+.menu-links {
+    display: flex;
+    gap: 20px; 
+}
+.menu-links a {
+    color: white;
+    text-decoration: none; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+.menu-links a:hover{background-color: grey;}
+.search-box {display: flex;}
+.search-box input[type="text"] {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.search-box button {
+    background-color: #4caf89; 
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.LandingButtons{
+    background-color: rgb(56, 168, 121);
+    color: white;
+    font-size: 18px;
+    padding: 17px 50px;
+    border-radius: 27px;
+    display: inline-flex;
+    justify-content:space-between;
+    align-items: stretch;
+}
+.LandingButtons:hover{
+    cursor: pointer;
+    background-color: rgb(98, 194, 154);
+}
+h2{color: rgb(56, 168, 120); font-size: 60px}
+h4{font-family: cursive; font-size: 40px;}
+.desktop_Seperator{
+    margin: 200px 0;}
+p{font-size: 20px}
+#footer{background-color: rgb(0, 0, 30); color: white;}
+#footer td{padding: 10px 50px 10px 0;}
+#footer td:hover{background-color:  rgba(156, 156, 167, 0.836);}
+.waitingButtons{
+    display: inline;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+.waitingButtons:hover{background-color: rgba(156, 156, 167, 0.836); color: black;cursor: pointer;}
+#footer th{color: gray; text-align: left;}
+.chooseDiv{display: grid; width: 100px 180px; border: 1px solid yellow;}
