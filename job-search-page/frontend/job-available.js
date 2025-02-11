@@ -76,10 +76,12 @@ function createJobbox() {
     const view_det = document.createElement("a")
     view_det.innerText = 'View Details'
     view_det.setAttribute("class" , 'btn btn-outline')
+    
 
     const apply = document.createElement("a")
     apply.innerText = 'Apply Now'
     apply.setAttribute("class" , 'btn btn-primary')
+    apply.setAttribute("href" , "../../job-apply-page/apply.html")
     //appending buttons in button container
 
     buttons.appendChild(view_det)
