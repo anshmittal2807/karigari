@@ -51,11 +51,15 @@ body {
 
 .sidebar {
     width: 280px;
-    background-color:#F1E4E4;
+    background-color: #F1E4E4;
     padding: 1.5rem;
     border-radius: 12px;
     height: fit-content;
     border: 2px solid black;
+    
+    /* Make the sidebar sticky */
+    position: sticky;
+    top: 2rem;  /* Adjust this value as needed */
 }
 
 .filter-section {
@@ -230,3 +234,4 @@ body {
     color: #13BDB4;
     text-decoration: underline;
 }
+
