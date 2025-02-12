@@ -6,6 +6,7 @@
 body {
     margin: 0; 
     font-family: sans-serif; 
+    background-color: rgb(243, 243, 243);
 }
 .top-bar {
     background-color: black;
@@ -89,3 +90,95 @@ p{font-size: 20px}
 .waitingButtons:hover{background-color: rgba(156, 156, 167, 0.836); color: black;cursor: pointer;}
 #footer th{color: gray; text-align: left;}
 .chooseDiv{display: grid; width: 100px 180px; border: 1px solid yellow;}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+.grid {
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+    color: #2a7c4a;
+}
+.partners {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.partners img {
+    max-height: 50px;
+}
+.main-wrapper {
+    width: 80%;
+    margin: 50px auto;
+}
+.title-heading {
+    color: #2a7c4a;
+}
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.feature-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.feature-card h2 {
+    color: #2a7c4a;
+}
+.brand-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.brand-logos img {
+    max-height: 50px;
+}
+.site-footer {
+    background-color: #0a0c10;
+    color: white;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.site-footer div {
+    margin: 10px;
+}
+.site-footer a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+.social-links img {
+    width: 20px;
+}
+.companies{
+    width: 11%;
+}
